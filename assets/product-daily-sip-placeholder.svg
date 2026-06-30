@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720" fill="none">
+  <rect width="600" height="720" fill="#f6fff9"/>
+  <rect x="40" y="80" width="520" height="560" rx="32" fill="#fff" stroke="#b11aa8" stroke-width="2" stroke-dasharray="12 8"/>
+  <rect x="220" y="160" width="160" height="280" rx="20" fill="url(#g1)"/>
+  <text x="300" y="500" text-anchor="middle" fill="#b11aa8" font-family="Arial,sans-serif" font-size="22" font-weight="700">Daily Sip</text>
+  <text x="300" y="535" text-anchor="middle" fill="#6a7282" font-family="Arial,sans-serif" font-size="14">Product image coming soon</text>
+  <defs>
+    <linearGradient id="g1" x1="220" y1="160" x2="380" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#cff7e8"/>
+      <stop offset="1" stop-color="#b11aa8" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+</svg>

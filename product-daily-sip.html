@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Sip — Daily Wellness Supplement | Nutribuy</title>
+  <meta name="description" content="Daily Sip by Nutribuy — a daily wellness supplement powder with electrolytes, vitamins, antioxidants, and digestive support. Good health pays back." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+<body class="overflow-x-hidden bg-[#fafafa] font-sans text-[#2f2f2f] antialiased">
+
+  <div class="bg-brand text-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:px-8">
+      <div class="flex min-w-0 items-center gap-2">
+        <i class="fa-solid fa-magnifying-glass shrink-0 text-[14px] opacity-60"></i>
+        <span class="truncate text-xs font-medium text-white/60">Search Products</span>
+      </div>
+      <div class="flex shrink-0 items-center gap-3 text-[11px] font-semibold sm:gap-5">
+        <a href="shop.html" class="hidden hover:text-white sm:inline">Our Products</a>
+        <a href="wishlist.html" class="flex items-center gap-1 hover:text-white"><span class="hidden sm:inline">Wishlist</span></a>
+        <a href="signup.html" class="flex items-center gap-1 hover:text-white"><span class="hidden sm:inline">Sign Up</span></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 border-b border-brand/10 bg-white/95 backdrop-blur-sm">
+    <div class="mx-auto flex min-h-[56px] max-w-7xl items-center gap-4 px-4 sm:min-h-[60px] sm:px-6 lg:px-8">
+      <a href="index.html" class="flex shrink-0 items-center py-1"><img src="assets/logo-header.png" alt="Nutribuy" class="site-logo object-contain object-left" /></a>
+      <nav class="hidden flex-1 items-center justify-center gap-6 lg:flex">
+        <a href="index.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Home</a>
+        <a href="shop.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Shop</a>
+        <a href="blog.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Blogs</a>
+      </nav>
+      <div class="ml-auto flex items-center gap-2">
+        <a href="cart.html" class="btn-gradient flex shrink-0 items-center gap-2 rounded-2xl px-3 py-2 text-sm font-semibold text-white sm:px-4">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="hidden sm:inline">Cart</span>
+        </a>
+        <button id="menu-toggle" type="button" class="flex h-10 w-10 items-center justify-center rounded-xl border border-brand/15 text-brand lg:hidden" aria-controls="mobile-menu"><i id="menu-icon-open" class="fa-solid fa-bars text-xl"></i><i id="menu-icon-close" class="fa-solid fa-xmark hidden text-xl"></i></button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="border-t border-brand/10 bg-white px-4 py-4 lg:hidden">
+      <div class="flex flex-col gap-1">
+        <a href="index.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Home</a>
+        <a href="shop.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Shop</a>
+        <a href="product-daily-sip.html" class="nav-link-active rounded-xl px-3 py-3 text-sm font-semibold">Daily Sip</a>
+        <a href="cart.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Cart</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Breadcrumb -->
+    <div class="border-b border-brand/10 bg-white px-4 py-3 sm:px-6 lg:px-8">
+      <nav class="mx-auto max-w-7xl text-xs text-[#99a1af]" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-brand">Home</a>
+        <span class="mx-2">/</span>
+        <a href="shop.html" class="hover:text-brand">Shop</a>
+        <span class="mx-2">/</span>
+        <span class="font-semibold text-[#4a5565]">Daily Sip</span>
+      </nav>
+    </div>
+
+    <!-- Product hero -->
+    <section class="bg-white px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
+        <div>
+          <div class="overflow-hidden rounded-3xl border border-brand/10 bg-[#f6fff9]">
+            <img src="assets/hero-refreshica.png" alt="Daily Sip wellness supplement by Nutribuy" class="w-full object-contain" />
+          </div>
+        </div>
+
+        <div>
+          <span class="inline-block rounded-full bg-brand/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand">Daily Wellness</span>
+          <h1 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Daily Sip</h1>
+          <p class="mt-2 text-base text-[#6a7282]">Premium daily wellness supplement powder for energy, calm, cognition, gut health &amp; daily nutrition.</p>
+
+          <div class="mt-4 flex items-center gap-2">
+            <div class="flex text-amber-400">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+            </div>
+            <span class="text-sm font-semibold">4.9</span>
+            <span class="text-xs text-[#99a1af]">(487 reviews)</span>
+          </div>
+
+          <p class="mt-6 text-3xl font-extrabold text-brand">₹299</p>
+          <p class="mt-1 text-xs text-[#99a1af]">MRP inclusive of all taxes · Free shipping over ₹499</p>
+
+          <div class="mt-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-[#4a5565]">Select pack size</p>
+            <div class="mt-2 flex flex-wrap gap-2">
+              <button type="button" class="rounded-2xl border-2 border-brand bg-brand/5 px-4 py-2.5 text-sm font-semibold text-brand">15 Sachets</button>
+              <button type="button" class="rounded-2xl border border-brand/20 px-4 py-2.5 text-sm font-semibold text-[#4a5565] hover:border-brand">30 Sachets</button>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a href="cart.html" class="btn-gradient flex flex-1 items-center justify-center gap-2 rounded-2xl py-4 text-sm font-bold text-white"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+            <a href="wishlist.html" class="flex flex-1 items-center justify-center gap-2 rounded-2xl border-2 border-brand/20 py-4 text-sm font-semibold text-brand hover:border-brand">Add to Wishlist</a>
+          </div>
+
+          <ul class="mt-6 space-y-2 text-sm text-[#4a5565]">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-brand"><i class="fa-solid fa-check"></i></span> Excellent, palatable taste with immediate refreshing experience</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-brand"><i class="fa-solid fa-check"></i></span> Supports hydration, immunity, energy, gut health &amp; daily wellness</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-brand"><i class="fa-solid fa-check"></i></span> Science-backed electrolytes + essential vitamins</li>
+          </ul>
+
+          <div class="mt-6 grid grid-cols-3 gap-3 rounded-2xl border border-brand/10 bg-[#fafafa] p-4 text-center">
+            <div><p class="text-[10px] font-bold uppercase tracking-wider text-[#99a1af]">Form</p><p class="mt-1 text-xs font-semibold">Powder</p></div>
+            <div><p class="text-[10px] font-bold uppercase tracking-wider text-[#99a1af]">Serve</p><p class="mt-1 text-xs font-semibold">1 sachet/day</p></div>
+            <div><p class="text-[10px] font-bold uppercase tracking-wider text-[#99a1af]">Category</p><p class="mt-1 text-xs font-semibold">Wellness</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key benefits -->
+    <section class="border-t border-brand/10 bg-[#fafafa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="text-center">
+          <span class="section-badge inline-block rounded-full bg-brand/10 px-4 py-1.5 text-[11px] font-bold tracking-[1.76px] text-brand"><i class="fa-solid fa-star"></i> KEY BENEFITS</span>
+          <h2 class="mt-4 text-2xl font-extrabold sm:text-3xl">Why Daily Sip?</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-sm text-[#6a7282]">A complete daily wellness formula designed to support your body and mind — every single day.</p>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl bg-white p-5 shadow-card"><span class="icon-circle bg-mint text-mint-dark"><i class="fa-solid fa-bolt"></i></span><h3 class="mt-3 font-bold">Energy &amp; Endurance</h3><p class="mt-2 text-sm text-[#6a7282]">Enhances energy and endurance levels to keep you going through busy days and active routines.</p></div>
+          <div class="rounded-2xl bg-white p-5 shadow-card"><span class="icon-circle bg-mint text-mint-dark"><i class="fa-solid fa-spa"></i></span><h3 class="mt-3 font-bold">Calm &amp; Stress Relief</h3><p class="mt-2 text-sm text-[#6a7282]">Brings calmness and helps reduce stress levels for balanced daily wellness.</p></div>
+          <div class="rounded-2xl bg-white p-5 shadow-card"><span class="icon-circle bg-mint text-mint-dark"><i class="fa-solid fa-brain"></i></span><h3 class="mt-3 font-bold">Cognitive Support</h3><p class="mt-2 text-sm text-[#6a7282]">Improves cognitive activities — focus, clarity, and mental agility for everyday performance.</p></div>
+          <div class="rounded-2xl bg-white p-5 shadow-card"><span class="icon-circle bg-mint text-mint-dark"><i class="fa-solid fa-leaf"></i></span><h3 class="mt-3 font-bold">Gut Health</h3><p class="mt-2 text-sm text-[#6a7282]">Sustains a healthy gut with a favourable microbiome and digestive enzymes.</p></div>
+          <div class="rounded-2xl bg-white p-5 shadow-card"><span class="icon-circle bg-mint text-mint-dark"><i class="fa-solid fa-bowl-food"></i></span><h3 class="mt-3 font-bold">Daily Nutrition</h3><p class="mt-2 text-sm text-[#6a7282]">Supplements desirable fibres and daily nutritional requirements your diet may miss.</p></div>
+          <div class="rounded-2xl bg-white p-5 shadow-card"><span class="icon-circle bg-mint text-mint-dark"><i class="fa-solid fa-shield-halved"></i></span><h3 class="mt-3 font-bold">Antioxidant Rich</h3><p class="mt-2 text-sm text-[#6a7282]">Enriched with essential antioxidants to support cellular defence and recovery from stress.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs: Overview, Ingredients, How to Use -->
+    <section class="bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8" data-product-tabs>
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-wrap gap-2 border-b border-brand/10 pb-4">
+          <button type="button" data-tab="overview" class="product-tab-active rounded-xl border-2 border-brand bg-brand/5 px-4 py-2 text-sm font-semibold text-brand">Overview</button>
+          <button type="button" data-tab="ingredients" class="rounded-xl border-2 border-transparent px-4 py-2 text-sm font-semibold text-[#6a7282] hover:bg-brand/5">What's Inside</button>
+          <button type="button" data-tab="howto" class="rounded-xl border-2 border-transparent px-4 py-2 text-sm font-semibold text-[#6a7282] hover:bg-brand/5">How to Use</button>
+        </div>
+
+        <div data-panel="overview" class="product-panel active mt-8 max-w-3xl">
+          <h2 class="text-xl font-bold">About Daily Sip</h2>
+          <p class="mt-4 text-sm leading-relaxed text-[#6a7282]">Daily Sip is Nutribuy's flagship daily wellness supplement — a premium powder blend that combines hydration support with essential vitamins and antioxidants. Good health pays back.</p>
+          <p class="mt-4 text-sm leading-relaxed text-[#6a7282]">Support hydration, immunity, energy, gut health, and daily wellness with science-backed ingredients. Because these powders combine hydration with a vitamin boost, they are particularly popular during intense workouts, illness recovery, or long travel periods.</p>
+          <p class="mt-4 rounded-xl bg-amber-50 p-4 text-xs leading-relaxed text-amber-900"><strong>Disclaimer:</strong> This product should not entirely replace your daily plain water intake unless recommended by a healthcare professional. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+        </div>
+
+        <div data-panel="ingredients" class="product-panel mt-8">
+          <h2 class="text-xl font-bold">What's Inside</h2>
+          <div class="mt-6 grid gap-6 lg:grid-cols-2">
+            <div class="rounded-2xl border border-brand/10 p-6">
+              <h3 class="font-bold text-brand">1. Electrolytes</h3>
+              <p class="mt-1 text-sm font-semibold text-[#4a5565]">Sodium · Potassium · Chloride</p>
+              <p class="mt-3 text-sm text-[#6a7282]">These minerals carry an electric charge and are responsible for the body's fluid balance and electrical conductivity.</p>
+              <ul class="mt-4 space-y-2 text-sm text-[#6a7282]">
+                <li><strong>Rapid Fluid Absorption:</strong> Sodium and chloride transport water at the cellular level faster than water alone.</li>
+                <li><strong>Muscle &amp; Nerve Function:</strong> Potassium helps muscles contract and relax smoothly, lowering cramping risk.</li>
+                <li><strong>Cellular Balance:</strong> Helps regulate blood volume and hemostatic levels, including cardiac rhythm.</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-brand/10 p-6">
+              <h3 class="font-bold text-brand">2. Vitamins</h3>
+              <p class="mt-1 text-sm font-semibold text-[#4a5565]">Vitamin C · B3 · B6 · B12</p>
+              <p class="mt-3 text-sm text-[#6a7282]">Essential vitamins that support energy metabolism, cellular defence, and overall vitality.</p>
+              <ul class="mt-4 space-y-2 text-sm text-[#6a7282]">
+                <li><strong>Vitamin C:</strong> Powerful antioxidant supporting immune health and recovery from stress.</li>
+                <li><strong>B-Complex (B3, B6, B12):</strong> Crucial cofactors that convert food into usable cellular energy and reduce fatigue.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div data-panel="howto" class="product-panel mt-8 max-w-3xl">
+          <h2 class="text-xl font-bold">How to Use</h2>
+          <ol class="mt-6 space-y-4">
+            <li class="flex gap-4"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">1</span><div><p class="font-semibold">Open one sachet</p><p class="mt-1 text-sm text-[#6a7282]">Tear open a single Daily Sip sachet — one serving per day.</p></div></li>
+            <li class="flex gap-4"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">2</span><div><p class="font-semibold">Mix with water</p><p class="mt-1 text-sm text-[#6a7282]">Pour into 250–300 ml of cold or room-temperature water. Stir or shake well until fully dissolved.</p></div></li>
+            <li class="flex gap-4"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">3</span><div><p class="font-semibold">Enjoy daily</p><p class="mt-1 text-sm text-[#6a7282]">Best consumed in the morning or post-workout. Store in a cool, dry place away from direct sunlight.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related product -->
+    <section class="border-t border-brand/10 bg-[#fafafa] px-4 py-10 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-xl font-extrabold">You may also like</h2>
+        <div class="mt-6 max-w-sm overflow-hidden rounded-2xl bg-white shadow-card">
+          <div class="h-48 bg-[#f0f8ff]"><img src="assets/hero-refreshica.png" alt="Hydration Refreshica" class="h-full w-full object-cover" /></div>
+          <div class="p-5">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-mint-dark">Hydration</p>
+            <h3 class="mt-1 font-bold">Refreshica Electrolyte Powder</h3>
+            <p class="mt-2 text-xs text-[#99a1af]">Electrolyte blend for workouts, recovery &amp; travel.</p>
+            <p class="mt-3 text-xl font-extrabold text-brand">₹349</p>
+            <a href="product-refreshica.html" class="mt-3 flex w-full items-center justify-center rounded-2xl border-2 border-brand py-3 text-xs font-bold text-brand hover:bg-brand/5">View Product</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-surface-dark text-white">
+    <div class="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 lg:px-8">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div><img src="assets/logo.png" alt="Nutribuy" class="site-logo-footer" /><p class="mt-5 text-[13px] text-brand-muted">Good Health Pays Back.</p></div>
+        <div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Products</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li><a href="product-daily-sip.html" class="hover:text-white">Daily Sip</a></li><li><a href="product-refreshica.html" class="hover:text-white">Hydration Refreshica</a></li></ul></div>
+        <div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Shop</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li><a href="shop.html" class="hover:text-white">All Products</a></li><li><a href="cart.html" class="hover:text-white">Cart</a></li></ul></div>
+        <div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Contact</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li>hello@nutribuy.in</li></ul></div>
+      </div>
+      <p class="mt-8 border-t border-brand/20 pt-6 text-xs text-[#3d2e4e]">© 2026 Nutribuy. All Rights Reserved. · Dietary supplement — not for medicinal use.</p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+  <script src="js/product-page.js"></script>
+</body>
+</html>

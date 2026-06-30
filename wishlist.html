@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wishlist — Nutribuy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script><script src="js/tailwind-config.js"></script><link rel="stylesheet" href="css/theme.css" />
+</head>
+<body class="overflow-x-hidden bg-[#fafafa] font-sans text-[#2f2f2f] antialiased">
+  <div class="bg-brand text-white"><div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6 lg:px-8"><div class="flex items-center gap-2"><span class="text-xs text-white/60">Search Products</span></div><div class="flex gap-3 text-[11px] font-semibold sm:gap-5"><a href="shop.html" class="hidden sm:inline hover:text-white">Our Products</a><a href="wishlist.html" class="font-bold text-white">Wishlist</a><a href="signup.html" class="hover:text-white">Sign Up</a></div></div></div>
+  <header class="sticky top-0 z-50 border-b border-brand/10 bg-white/95 backdrop-blur-sm"><div class="mx-auto flex min-h-[56px] max-w-7xl items-center gap-4 px-4 sm:min-h-[60px] sm:px-6 lg:px-8"><a href="index.html"><img src="assets/logo-header.png" alt="Nutribuy" class="site-logo object-contain" /></a><nav class="hidden flex-1 items-center justify-center gap-6 lg:flex"><a href="index.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Home</a><a href="shop.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Shop</a><a href="blog.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Blogs</a></nav><div class="ml-auto flex items-center gap-2"><a href="cart.html" class="btn-gradient flex items-center gap-2 rounded-2xl px-3 py-2 text-sm font-semibold text-white sm:px-4"><i class="fa-solid fa-cart-shopping"></i><span class="hidden sm:inline">Cart</span><span class="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-bold text-brand">2</span></a><button id="menu-toggle" type="button" class="flex h-10 w-10 items-center justify-center rounded-xl border border-brand/15 text-brand lg:hidden"><i id="menu-icon-open" class="fa-solid fa-bars text-xl"></i><i id="menu-icon-close" class="fa-solid fa-xmark hidden text-xl"></i></button></div></div><nav id="mobile-menu" class="border-t border-brand/10 bg-white px-4 py-4 lg:hidden"><div class="flex flex-col gap-1"><a href="index.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Home</a><a href="wishlist.html" class="nav-link-active rounded-xl px-3 py-3 text-sm font-semibold">Wishlist</a><a href="shop.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Shop</a></div></nav></header>
+  <main>
+    <section class="page-hero border-b border-brand/10 px-4 py-10 sm:py-14 lg:px-8"><div class="mx-auto max-w-7xl text-center"><span class="section-badge inline-block rounded-full bg-brand/10 px-4 py-1.5 text-[11px] font-bold tracking-[1.76px] text-brand"><i class="fa-solid fa-star"></i> SAVED FOR LATER</span><h1 class="mt-4 text-3xl font-extrabold sm:text-4xl">Your Wishlist</h1><p class="mt-4 text-sm text-[#6a7282]">2 products saved · Add to cart anytime</p></div></section>
+    <section class="px-4 py-10 sm:px-6 lg:px-8"><div class="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
+      <article class="overflow-hidden rounded-2xl bg-white shadow-card">
+        <div class="relative h-56 bg-[#f6fff9]"><a href="product-daily-sip.html"><img src="assets/hero-refreshica.png" alt="Daily Sip" class="h-full w-full object-cover" /></a><button class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-brand shadow" aria-label="Remove"><i class="fa-solid fa-heart"></i></button></div>
+        <div class="p-5"><p class="text-[10px] font-bold uppercase tracking-widest text-brand-dark">Daily Wellness</p><h3 class="mt-1 font-bold"><a href="product-daily-sip.html" class="hover:text-brand">Daily Sip</a></h3><p class="mt-1 text-2xl font-extrabold text-brand">₹299</p><a href="cart.html" class="btn-gradient mt-4 flex w-full items-center justify-center gap-1.5 rounded-2xl py-3 text-xs font-bold text-white"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a></div>
+      </article>
+      <article class="overflow-hidden rounded-2xl bg-white shadow-card">
+        <div class="relative h-56 bg-[#f0f8ff]"><a href="product-refreshica.html"><img src="assets/hero-refreshica.png" alt="Hydration Refreshica" class="h-full w-full object-cover" /></a><button class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-brand shadow" aria-label="Remove"><i class="fa-solid fa-heart"></i></button></div>
+        <div class="p-5"><p class="text-[10px] font-bold uppercase tracking-widest text-mint-dark">Hydration</p><h3 class="mt-1 font-bold"><a href="product-refreshica.html" class="hover:text-brand">Hydration Refreshica</a></h3><p class="mt-1 text-2xl font-extrabold text-brand">₹349</p><a href="cart.html" class="btn-gradient mt-4 flex w-full items-center justify-center gap-1.5 rounded-2xl py-3 text-xs font-bold text-white"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a></div>
+      </article>
+    </div><div class="mx-auto mt-10 max-w-7xl text-center"><a href="shop.html" class="inline-flex rounded-2xl border-2 border-brand px-8 py-3 text-sm font-semibold text-brand">Browse All Products</a></div></section>
+  </main>
+  <footer class="bg-surface-dark text-white"><div class="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 lg:px-8"><p class="text-xs text-[#3d2e4e]">© 2026 Nutribuy. All Rights Reserved.</p></div></footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
