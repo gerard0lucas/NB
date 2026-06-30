@@ -11,53 +11,9 @@
   <script src="js/tailwind-config.js"></script>
   <link rel="stylesheet" href="css/theme.css" />
 </head>
-<body class="overflow-x-hidden bg-[#fafafa] font-sans text-[#2f2f2f] antialiased">
+<body class="overflow-x-hidden bg-[#fafafa] font-sans text-[#2f2f2f] antialiased" data-page="shop">
 
-  <div class="bg-brand text-white">
-    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:px-8">
-      <div class="flex min-w-0 items-center gap-2">
-        <i class="fa-solid fa-magnifying-glass shrink-0 text-[14px] opacity-60"></i>
-        <span class="truncate text-xs font-medium text-white/60">Search Products</span>
-      </div>
-      <div class="flex shrink-0 items-center gap-3 text-[11px] font-semibold tracking-wide text-white/90 sm:gap-5">
-        <a href="shop.html" class="hidden hover:text-white sm:inline">Our Products</a>
-        <a href="wishlist.html" class="flex items-center gap-1 hover:text-white"><i class="fa-regular fa-heart"></i><span class="hidden sm:inline">Wishlist</span></a>
-        <a href="signup.html" class="flex items-center gap-1 hover:text-white"><i class="fa-regular fa-user"></i><span class="hidden sm:inline">Sign Up</span></a>
-      </div>
-    </div>
-  </div>
-
-  <header class="sticky top-0 z-50 border-b border-brand/10 bg-white/95 backdrop-blur-sm">
-    <div class="mx-auto flex min-h-[56px] max-w-7xl items-center gap-4 px-4 sm:min-h-[60px] sm:gap-6 sm:px-6 lg:px-8">
-      <a href="index.html" class="flex shrink-0 items-center py-1"><img src="assets/logo-header.png" alt="Nutribuy" class="site-logo object-contain object-left" /></a>
-      <nav class="hidden flex-1 items-center justify-center gap-6 lg:flex xl:gap-9">
-        <a href="index.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Home</a>
-        <a href="shop.html" class="nav-link-active text-sm font-semibold hover:text-brand">Shop</a>
-        <a href="index.html#about" class="text-sm font-semibold text-[#4a5565] hover:text-brand">About Us</a>
-        <a href="blog.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Blogs</a>
-        <a href="index.html#faq" class="text-sm font-semibold text-[#4a5565] hover:text-brand">FAQ</a>
-        <a href="index.html#contact" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Contact</a>
-      </nav>
-      <div class="ml-auto flex items-center gap-2 sm:gap-3">
-        <a href="cart.html" class="btn-gradient flex shrink-0 items-center gap-2 rounded-2xl px-3 py-2 text-sm font-semibold text-white sm:px-4">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span class="hidden sm:inline">Cart</span>
-          <span class="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-bold text-brand">2</span>
-        </a>
-        <button id="menu-toggle" type="button" class="flex h-10 w-10 items-center justify-center rounded-xl border border-brand/15 text-brand lg:hidden" aria-expanded="false" aria-controls="mobile-menu"><i id="menu-icon-open" class="fa-solid fa-bars text-xl"></i><i id="menu-icon-close" class="fa-solid fa-xmark hidden text-xl"></i></button>
-      </div>
-    </div>
-    <nav id="mobile-menu" class="border-t border-brand/10 bg-white px-4 py-4 lg:hidden">
-      <div class="flex flex-col gap-1">
-        <a href="index.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5">Home</a>
-        <a href="shop.html" class="nav-link-active rounded-xl px-3 py-3 text-sm font-semibold hover:bg-brand/5">Shop</a>
-        <a href="blog.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5">Blogs</a>
-        <a href="wishlist.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5">Wishlist</a>
-        <a href="cart.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5">Cart</a>
-        <a href="signup.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5">Sign Up</a>
-      </div>
-    </nav>
-  </header>
+  <div id="site-header"></div>
 
   <main>
     <section class="page-hero border-b border-brand/10 px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
@@ -115,17 +71,7 @@
     </section>
   </main>
 
-  <footer class="bg-surface-dark text-white">
-    <div class="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 sm:pt-12 lg:px-8">
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <div><img src="assets/logo.png" alt="Nutribuy" class="site-logo-footer object-contain object-left" /><p class="mt-5 text-[13px] text-brand-muted">Good Health Pays Back.</p></div>
-        <div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Quick Links</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li><a href="index.html" class="hover:text-white">Home</a></li><li><a href="shop.html" class="hover:text-white">Shop</a></li><li><a href="blog.html" class="hover:text-white">Blogs</a></li><li><a href="cart.html" class="hover:text-white">Cart</a></li><li><a href="wishlist.html" class="hover:text-white">Wishlist</a></li></ul></div>
-        <div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Products</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li><a href="product-daily-sip.html" class="hover:text-white">Daily Sip</a></li><li><a href="product-refreshica.html" class="hover:text-white">Hydration Refreshica</a></li></ul></div>
-        <div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Contact</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li>+91 80000 00000</li><li>hello@nutribuy.in</li></ul></div>
-      </div>
-      <div class="mt-8 border-t border-brand/20 pt-6 text-center text-xs text-[#3d2e4e] sm:text-left"><p>© 2026 Nutribuy. All Rights Reserved.</p></div>
-    </div>
-  </footer>
-  <script src="js/site.js"></script>
+  <footer id="contact" class="site-footer"></footer>
+  <script src="js/layout.js"></script>
 </body>
 </html>

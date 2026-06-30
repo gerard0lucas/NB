@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — Nutribuy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs — Nutribuy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script><script src="js/tailwind-config.js"></script><link rel="stylesheet" href="css/theme.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/theme.css" />
 </head>
-<body class="overflow-x-hidden bg-[#fafafa] font-sans text-[#2f2f2f] antialiased">
-  <div class="bg-brand text-white"><div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 lg:px-8"><div class="flex min-w-0 items-center gap-2"><i class="fa-solid fa-magnifying-glass text-[14px] opacity-60"></i><span class="text-xs font-medium text-white/60">Search Products</span></div><div class="flex gap-3 text-[11px] font-semibold sm:gap-5"><a href="shop.html" class="hidden sm:inline hover:text-white">Our Products</a><a href="wishlist.html" class="flex items-center gap-1 hover:text-white"><i class="fa-regular fa-heart"></i><span class="hidden sm:inline">Wishlist</span></a><a href="signup.html" class="flex items-center gap-1 hover:text-white"><i class="fa-regular fa-user"></i><span class="hidden sm:inline">Sign Up</span></a></div></div></div>
-  <header class="sticky top-0 z-50 border-b border-brand/10 bg-white/95 backdrop-blur-sm"><div class="mx-auto flex min-h-[56px] max-w-7xl items-center gap-4 px-4 sm:min-h-[60px] sm:px-6 lg:px-8"><a href="index.html"><img src="assets/logo-header.png" alt="Nutribuy" class="site-logo object-contain" /></a><nav class="hidden flex-1 items-center justify-center gap-6 lg:flex"><a href="index.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Home</a><a href="shop.html" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Shop</a><a href="index.html#about" class="text-sm font-semibold text-[#4a5565] hover:text-brand">About Us</a><a href="blog.html" class="nav-link-active text-sm font-semibold">Blogs</a><a href="index.html#faq" class="text-sm font-semibold text-[#4a5565] hover:text-brand">FAQ</a><a href="index.html#contact" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Contact</a></nav><div class="ml-auto flex items-center gap-2"><a href="cart.html" class="btn-gradient flex items-center gap-2 rounded-2xl px-3 py-2 text-sm font-semibold text-white sm:px-4"><i class="fa-solid fa-cart-shopping"></i><span class="hidden sm:inline">Cart</span><span class="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-bold text-brand">2</span></a><button id="menu-toggle" type="button" class="flex h-10 w-10 items-center justify-center rounded-xl border border-brand/15 text-brand lg:hidden"><i id="menu-icon-open" class="fa-solid fa-bars text-xl"></i><i id="menu-icon-close" class="fa-solid fa-xmark hidden text-xl"></i></button></div></div><nav id="mobile-menu" class="border-t border-brand/10 bg-white px-4 py-4 lg:hidden"><div class="flex flex-col gap-1"><a href="index.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Home</a><a href="shop.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Shop</a><a href="blog.html" class="nav-link-active rounded-xl px-3 py-3 text-sm font-semibold">Blogs</a><a href="cart.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565]">Cart</a></div></nav></header>
+<body class="overflow-x-hidden bg-[#fafafa] font-sans text-[#2f2f2f] antialiased" data-page="blog">
+  <div id="site-header"></div>
   <main>
-    <section class="page-hero border-b border-brand/10 px-4 py-10 sm:py-14 lg:px-8"><div class="mx-auto max-w-7xl text-center"><span class="section-badge inline-block rounded-full bg-brand/10 px-4 py-1.5 text-[11px] font-bold tracking-[1.76px] text-brand"><i class="fa-solid fa-star"></i> WELLNESS INSIGHTS</span><h1 class="mt-4 text-3xl font-extrabold sm:text-4xl lg:text-5xl">Read Our Wellness Blog</h1><p class="mx-auto mt-4 max-w-2xl text-sm text-[#6a7282] sm:text-base">Science-backed insights on health, hydration, nutrition, and daily wellness.</p></div></section>
-    <section class="px-4 py-10 sm:px-6 sm:py-12 lg:px-8"><div class="mx-auto max-w-7xl grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <article class="overflow-hidden rounded-2xl bg-white shadow-sm"><img src="assets/blog-1.png" alt="" class="h-52 w-full object-cover" /><div class="p-6"><span class="rounded-full bg-cyan-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-cyan-600">Hydration</span><h2 class="mt-3 text-lg font-bold leading-snug">Why Electrolytes Matter More Than You Think</h2><p class="mt-3 text-sm text-[#6a7282]">Most people know to drink water, but electrolyte balance is the hidden key to real cellular hydration.</p><a href="#" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a></div></article>
-      <article class="overflow-hidden rounded-2xl bg-white shadow-sm"><img src="assets/blog-2.png" alt="" class="h-52 w-full object-cover" /><div class="p-6"><span class="rounded-full bg-brand/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand">Nutrition</span><h2 class="mt-3 text-lg font-bold leading-snug">The Top 5 Micronutrients Missing from Modern Diets</h2><p class="mt-3 text-sm text-[#6a7282]">Many people are deficient in key nutrients that affect energy, immunity, and mood.</p><a href="#" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a></div></article>
-      <article class="overflow-hidden rounded-2xl bg-white shadow-sm"><img src="assets/blog-3.png" alt="" class="h-52 w-full object-cover" /><div class="p-6"><span class="rounded-full bg-brand-dark/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand-dark">Wellness</span><h2 class="mt-3 text-lg font-bold leading-snug">Building a Daily Wellness Routine That Actually Sticks</h2><p class="mt-3 text-sm text-[#6a7282]">Small, science-backed daily habits compound into lasting wellness transformations.</p><a href="#" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a></div></article>
-      <article class="overflow-hidden rounded-2xl bg-white shadow-sm"><img src="assets/instagram-2.png" alt="" class="h-52 w-full object-cover" /><div class="p-6"><span class="rounded-full bg-mint/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-mint-dark">Energy</span><h2 class="mt-3 text-lg font-bold leading-snug">Morning Rituals That Boost All-Day Energy</h2><p class="mt-3 text-sm text-[#6a7282]">Start your day with hydration and micronutrients for sustained vitality without the crash.</p><a href="#" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a></div></article>
-      <article class="overflow-hidden rounded-2xl bg-white shadow-sm"><img src="assets/instagram-3.png" alt="" class="h-52 w-full object-cover" /><div class="p-6"><span class="rounded-full bg-brand/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand">Fitness</span><h2 class="mt-3 text-lg font-bold leading-snug">Post-Workout Hydration: What Your Body Really Needs</h2><p class="mt-3 text-sm text-[#6a7282]">Learn why water alone isn't enough after intense exercise and how electrolytes help recovery.</p><a href="#" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a></div></article>
-      <article class="overflow-hidden rounded-2xl bg-white shadow-sm"><img src="assets/instagram-4.png" alt="" class="h-52 w-full object-cover" /><div class="p-6"><span class="rounded-full bg-cyan-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-cyan-600">Immunity</span><h2 class="mt-3 text-lg font-bold leading-snug">5 Simple Habits to Strengthen Your Immune System</h2><p class="mt-3 text-sm text-[#6a7282]">Evidence-based tips for supporting your body's natural defences every day.</p><a href="#" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a></div></article>
-    </div></section>
+    <section class="page-hero border-b border-brand/10 px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <div class="mx-auto max-w-7xl text-center">
+        <span class="section-badge inline-block rounded-full bg-brand/10 px-4 py-1.5 text-[11px] font-bold tracking-[1.76px] text-brand"><i class="fa-solid fa-star"></i> WELLNESS BLOG</span>
+        <h1 class="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">Nutribuy Blogs</h1>
+        <p class="mx-auto mt-4 max-w-2xl text-sm text-[#6a7282] sm:text-base">Tips on hydration, daily wellness, and getting the most from your supplement routine.</p>
+      </div>
+    </section>
+    <section class="px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+      <div class="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2">
+        <article class="overflow-hidden rounded-2xl bg-white shadow-card">
+          <div class="h-40 bg-gradient-to-br from-brand/10 to-mint/30"></div>
+          <div class="p-5">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-brand">Hydration</p>
+            <h2 class="mt-2 font-bold">Why Electrolytes Matter Every Day</h2>
+            <p class="mt-2 text-sm text-[#6a7282]">Learn how Refreshica supports recovery, travel, and active days.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-white shadow-card">
+          <div class="h-40 bg-gradient-to-br from-mint/40 to-brand/10"></div>
+          <div class="p-5">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-brand-dark">Daily Wellness</p>
+            <h2 class="mt-2 font-bold">Building a Simple Morning Ritual</h2>
+            <p class="mt-2 text-sm text-[#6a7282]">How Daily Sip fits into a balanced start to your day.</p>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
-  <footer class="bg-surface-dark text-white"><div class="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 lg:px-8"><div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4"><div><img src="assets/logo.png" alt="Nutribuy" class="site-logo-footer" /><p class="mt-5 text-[13px] text-brand-muted">Good Health Pays Back.</p></div><div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Quick Links</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li><a href="index.html" class="hover:text-white">Home</a></li><li><a href="shop.html" class="hover:text-white">Shop</a></li><li><a href="blog.html" class="hover:text-white">Blogs</a></li></ul></div><div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Account</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li><a href="signup.html" class="hover:text-white">Sign Up</a></li><li><a href="cart.html" class="hover:text-white">Cart</a></li></ul></div><div><h4 class="text-[11px] font-bold uppercase tracking-[1.76px]">Contact</h4><ul class="mt-5 space-y-3 text-[13px] text-brand-muted"><li>hello@nutribuy.in</li></ul></div></div><div class="mt-8 border-t border-brand/20 pt-6 text-xs text-[#3d2e4e]">© 2026 Nutribuy. All Rights Reserved.</div></div></footer>
-  <script src="js/site.js"></script>
+  <footer id="contact" class="site-footer"></footer>
+  <script src="js/layout.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<div id="site-nav" class="site-nav">
+<!-- Top bar -->
+<div class="bg-brand text-white">
+  <div class="shipping-marquee overflow-hidden py-2.5 sm:hidden" aria-live="polite">
+    <div class="shipping-marquee-track">
+      <span><i class="fa-solid fa-truck-fast mr-1.5"></i>Free shipping on orders over ₹499</span>
+      <span aria-hidden="true"><i class="fa-solid fa-truck-fast mr-1.5"></i>Free shipping on orders over ₹499</span>
+    </div>
+  </div>
+  <div class="mx-auto hidden max-w-7xl items-center justify-between gap-3 px-4 py-2.5 sm:flex sm:px-6 lg:px-8">
+    <p class="truncate text-xs font-semibold text-white"><i class="fa-solid fa-truck-fast mr-1.5"></i>Free shipping on orders over ₹499</p>
+    <div class="ml-auto flex shrink-0 items-center gap-3 text-[11px] font-semibold tracking-wide text-white/90 sm:gap-5">
+      <a href="signup.html" id="top-signup" class="flex items-center gap-1 hover:text-white" aria-label="Sign Up">
+        <i class="fa-regular fa-user"></i>
+        <span>Sign Up</span>
+      </a>
+      <a href="{{CONTACT_HREF}}" class="flex items-center gap-1 hover:text-white" aria-label="Contact">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Main nav -->
+<header class="overflow-visible border-b border-brand/10 bg-white/95 backdrop-blur-sm">
+  <div class="relative mx-auto flex min-h-[56px] max-w-7xl items-center gap-4 px-4 sm:min-h-[60px] sm:gap-6 sm:px-6 lg:px-8">
+    <button id="menu-toggle" type="button" class="nav-menu-toggle relative z-10 flex h-10 w-10 shrink-0 items-center justify-center text-brand lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <i id="menu-icon-open" class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+      <i id="menu-icon-close" class="fa-solid fa-xmark text-xl" aria-hidden="true"></i>
+    </button>
+    <a href="index.html" class="absolute left-1/2 z-10 flex shrink-0 -translate-x-1/2 items-center py-1 lg:relative lg:left-auto lg:translate-x-0">
+      <img src="assets/logo-header.png" alt="Nutribuy" class="site-logo object-contain object-left" />
+    </a>
+    <nav class="hidden flex-1 items-center justify-center gap-6 lg:flex xl:gap-8" aria-label="Main">
+      <a href="index.html" data-nav="home" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Home</a>
+      <a href="shop.html" data-nav="shop" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Shop</a>
+      <a href="about.html" data-nav="about" class="text-sm font-semibold text-[#4a5565] hover:text-brand">About Us</a>
+      <a href="blog.html" data-nav="blog" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Blogs</a>
+      <a href="track.html" data-nav="track" class="text-sm font-semibold text-[#4a5565] hover:text-brand">Track</a>
+    </nav>
+    <div class="relative z-10 ml-auto flex shrink-0 items-center">
+      <a href="cart.html" class="nav-cart" aria-label="Cart, 2 items">
+        <span class="nav-cart-icon-wrap">
+          <i class="fa-solid fa-cart-shopping nav-cart-icon" aria-hidden="true"></i>
+          <span class="nav-cart-count">2</span>
+        </span>
+        <span class="nav-cart-label">Cart</span>
+      </a>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="border-t border-brand/10 bg-white px-4 py-4 lg:hidden" aria-label="Mobile">
+    <div class="flex flex-col gap-1">
+      <a href="index.html" data-nav="home" data-nav-mobile class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">Home</a>
+      <a href="shop.html" data-nav="shop" data-nav-mobile class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">Shop</a>
+      <a href="about.html" data-nav="about" data-nav-mobile class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">About Us</a>
+      <a href="blog.html" data-nav="blog" data-nav-mobile class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">Blogs</a>
+      <a href="track.html" data-nav="track" data-nav-mobile class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">Track</a>
+      <a href="signup.html" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">Sign Up</a>
+      <a href="{{CONTACT_HREF}}" class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">Contact</a>
+      <a href="cart.html" data-nav="cart" data-nav-mobile class="rounded-xl px-3 py-3 text-sm font-semibold text-[#4a5565] hover:bg-brand/5 hover:text-brand">Cart</a>
+    </div>
+  </nav>
+</header>
+</div>
